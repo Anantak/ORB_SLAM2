@@ -121,6 +121,10 @@ public:
     int GetTrackingState();
     std::vector<MapPoint*> GetTrackedMapPoints();
     std::vector<cv::KeyPoint> GetTrackedKeyPointsUn();
+    
+    // Accessors
+    Map* MapPtr() {return mpMap;}
+    Tracking* TrackerPtr() {return mpTracker;}
 
 private:
 

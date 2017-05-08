@@ -114,6 +114,9 @@ public:
     bool mbOnlyTracking;
 
     void Reset();
+    
+    // Accessors
+    const cv::Mat& CameraMatrix() const {return mK;}
 
 protected:
 
